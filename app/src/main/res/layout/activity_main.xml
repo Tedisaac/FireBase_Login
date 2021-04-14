@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:hint="Enter Your Email"
+       android:inputType="textEmailAddress"
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:layout_marginTop="150dp"
+       android:drawableLeft="@drawable/ic_baseline_email_24"
+       android:padding="20dp"
+       android:background="@drawable/edittext"
+       android:id="@+id/em">
+   </EditText>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:padding="20dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/passw">
+    </EditText>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="LOGIN"
+        android:padding="10dp"
+        android:background="@drawable/but_color"
+        android:id="@+id/login">
+    </Button>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        >
+    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/reg"
+            android:textColorHint="@color/teal_200"
+            android:onClick="regEvent">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---------------- OR -----------------"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Google Sign in"
+        android:background="@drawable/but_color"
+        android:drawableLeft="@drawable/googleg_standard_color_18"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/google">
+    </Button>
+
+</LinearLayout>
